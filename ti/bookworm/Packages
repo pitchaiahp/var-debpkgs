@@ -1,3 +1,102 @@
+Package: bcm43xx-utils
+Version: 3154fcb-r1.0.2
+Architecture: arm64
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: base-files, gpiod, i2c-tools, libgpiod2, util-linux, var-gpio-utils, var-wireless-utils
+Filename: ./bcm43xx-utils_3154fcb-r1.0.2_arm64.deb
+Size: 2800
+MD5sum: 59616206b4b6f9751ac1d477358ddf4b
+SHA1: 898255b7bad45269c8e1843e8acec8beefe68002
+SHA256: 86f16c6e355d55427acafd4ee4ba87382bc231ec96bf8abc58325aa7accbe4f4
+Section: base
+Priority: optional
+Description: bcm43xx-utils version 3154fcb-r1.0
+ Startup and config files for use with BCM43XX WIFI and Bluetooth
+Oe: bcm43xx-utils
+Packagearch: am62x-var-som
+
+Package: linux-firmware-bcm4339
+Version: 1:20230804-r0.arago1.0
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-broadcom-license
+Filename: ./linux-firmware-bcm4339_20230804-r0.arago1.0_all.deb
+Size: 382392
+MD5sum: 88e85ad26490613d4aaef54a8166c3e3
+SHA1: e11704234c1b755673c58fdd4c92fa5fd1127b58
+SHA256: 67492ec5c1a56ed9605be8ed5ea066326f656e6d93a9885c1b667085d6ca02e2
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+Oe: linux-firmware
+Packagearch: all
+
+Package: linux-firmware-bcm43430
+Version: 1:20230804-r0.arago1.0
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: linux-firmware-cypress-license
+Filename: ./linux-firmware-bcm43430_20230804-r0.arago1.0_all.deb
+Size: 312352
+MD5sum: 23fe98917d9b8936f7278d4236112c38
+SHA1: d807fcbdde2569359752255ef3438a81f75c39e9
+SHA256: 31987c99feeb1ba0f37c11183352ed065b290361be28fea19b7704389c04ac75
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+Oe: linux-firmware
+Packagearch: all
+
+Package: linux-firmware-broadcom-license
+Version: 1:20230804-r0.arago1.0
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-broadcom-license_20230804-r0.arago1.0_all.deb
+Size: 2928
+MD5sum: adaed724831ccc931f20e40a26afa84b
+SHA1: c3f71d76ba88b2a4228a0a8ea42ceff34485fe68
+SHA256: 98c119688ee1f49043080837d342b7baef2523902430e3715e5650c91168e8a0
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+Oe: linux-firmware
+Packagearch: all
+
+Package: linux-firmware-cypress-license
+Version: 1:20230804-r0.arago1.0
+Architecture: all
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Filename: ./linux-firmware-cypress-license_20230804-r0.arago1.0_all.deb
+Size: 4556
+MD5sum: 1e7a5ff36e8dcf8188d2f3d49a03c49d
+SHA1: 5ec083fd7abdeb279931e098fc6c084ece9aca51
+SHA256: 82f99935a48d854c4eca23236399d45c7b472e5c385a1438da806fc467c5bafe
+Section: kernel
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.kernel.org/
+Description: Firmware files for use with Linux kernel
+ Linux firmware is a package distributed alongside the Linux kernel that
+ contains firmware binary blobs necessary for partial or full
+ functionality of certain hardware devices.
+Oe: linux-firmware
+Packagearch: all
+
 Package: linux-headers-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0
 Source: ti-linux-kernel
 Version: 6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1
@@ -72,4 +171,38 @@ Homepage: https://www.kernel.org/
 Description: Linux support headers for userspace development
  This package provides userspaces headers from the Linux kernel.  These headers
  are used by the installed headers for GNU glibc and other system libraries.
+
+Package: var-gpio-utils
+Version: 3154fcb-r1.0.2
+Architecture: arm64
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: gpiod, libgpiod2
+Filename: ./var-gpio-utils_3154fcb-r1.0.2_arm64.deb
+Size: 1196
+MD5sum: 3749e14bc4cb841701e00404bd78422c
+SHA1: b715492f1354858baf5e19e56fa5222731a61944
+SHA256: dff461ab77b324d1cfea395662702970a5a075dcdb5093ebf940f18811410809
+Section: base
+Priority: optional
+Description: var-gpio-utils version 3154fcb-r1.0
+ Install gpio utilities and scripts used by Variscite SOMs
+Oe: var-gpio-utils
+Packagearch: aarch64
+
+Package: var-wireless-utils
+Version: 3154fcb-r1.0.0
+Architecture: arm64
+Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
+Depends: base-files
+Filename: ./var-wireless-utils_3154fcb-r1.0.0_arm64.deb
+Size: 3800
+MD5sum: 8985e8fa27579f6d36a66c10a918a333
+SHA1: 7228ea9bf5f9b69303a0535393153c36c88f64f8
+SHA256: 508e06435d77e61971954ad81083a43feca71157cd11547f8b191ca96213244e
+Section: base
+Priority: optional
+Description: var-wireless-utils version 3154fcb-r1.0
+ Variscite startup scripts for use with Variscite wireless modules
+Oe: var-wireless-utils
+Packagearch: aarch64
 

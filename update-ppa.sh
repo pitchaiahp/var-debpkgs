@@ -8,20 +8,30 @@ if ! command -v dpkg-scanpackages &> /dev/null || ! command -v apt-ftparchive &>
     exit 1
 fi
 
-# Set PPA_DIR to the directory where this script is located
-PPA_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Array of PPAs to update
+PPAS=("ti/bookworm")
 
-# Change to PPA_DIR so paths in Packages file are relative
-cd "$PPA_DIR" || exit 1
+# Loop through each PPA in the array
+for PPA in "${PPAS[@]}"; do
+    PPA_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$PPA"
 
-# Generate Packages and Packages.gz files
-echo "Generating Packages and Packages.gz..."
-dpkg-scanpackages --multiversion . > Packages
-gzip -k -f Packages
+    # Check if PPA directory exists
+    if [ ! -d "$PPA_DIR" ]; then
+        echo "PPA directory $PPA_DIR does not exist, skipping..."
+        continue
+    fi
 
-# Generate Release file
-echo "Generating Release file..."
-apt-ftparchive release . > Release
+    # Change to PPA_DIR so paths in Packages file are relative
+    cd "$PPA_DIR" || exit 1
 
-echo "PPA files updated successfully."
+    # Generate Packages and Packages.gz files
+    echo "Generating Packages and Packages.gz in $PPA_DIR..."
+    dpkg-scanpackages --multiversion . > Packages
+    gzip -k -f Packages
 
+    # Generate Release file
+    echo "Generating Release file in $PPA_DIR..."
+    apt-ftparchive release . > Release
+
+    echo "PPA files updated successfully in $PPA_DIR."
+done

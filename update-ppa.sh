@@ -9,7 +9,7 @@ if ! command -v dpkg-scanpackages &> /dev/null || ! command -v apt-ftparchive &>
 fi
 
 # Array of PPAs to update
-PPAS=("var-ti" "var-nxp" "am62x-var-som")
+PPAS=("var" "var-ti" "var-nxp" "am62x-var-som")
 
 # Array of releases
 RELEASES=("bookworm")

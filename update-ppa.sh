@@ -59,16 +59,15 @@ for PPA in "${PPAS[@]}"; do
 
         # Create directories for each release in dists and pool
         mkdir -p "$DIST_DIR/main/binary-arm64"
-        mkdir -p "$POOL_DIR"
+        mkdir -p "$POOL_RELEASE_DIR"
 
-        # Organize deb files directly in the PPA directory into pool for all releases
-
+        # Organize deb files into pool for all releases
         organize_debs_into_pool "$POOL_DIR" "$POOL_RELEASE_DIR"
-        cleanup_debs $POOL_DIR
+        cleanup_debs "$POOL_DIR"
 
         # Organize deb files in the specific release directory into pool
         organize_debs_into_pool "$POOL_RELEASE_DIR" "$POOL_RELEASE_DIR"
-        cleanup_debs $POOL_RELEASE_DIR
+        cleanup_debs "$POOL_RELEASE_DIR"
 
         # Change to the appropriate pool directory for dpkg-scanpackages
         cd "$POOL_RELEASE_DIR" || exit 1
@@ -78,9 +77,16 @@ for PPA in "${PPAS[@]}"; do
         dpkg-scanpackages --multiversion . > "$DIST_DIR/main/binary-arm64/Packages"
         gzip -k -f "$DIST_DIR/main/binary-arm64/Packages"
 
-        # Generate Release file
+        # Generate Release file with necessary metadata
         echo "Generating Release file for $RELEASE in $DIST_DIR..."
-        apt-ftparchive release "$DIST_DIR" > "$DIST_DIR/Release"
+        apt-ftparchive release -o APT::FTPArchive::Release::Origin="Variscite" \
+                               -o APT::FTPArchive::Release::Label="Variscite" \
+                               -o APT::FTPArchive::Release::Suite="$RELEASE" \
+                               -o APT::FTPArchive::Release::Codename="$RELEASE" \
+                               -o APT::FTPArchive::Release::Architectures="arm64" \
+                               -o APT::FTPArchive::Release::Components="main" \
+                               -o APT::FTPArchive::Release::Description="Variscite $PPA packages for $RELEASE" \
+                               "$DIST_DIR" > "$DIST_DIR/Release"
 
         echo "PPA files updated successfully for $RELEASE in $PPA_DIR."
         cd -

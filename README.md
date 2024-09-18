@@ -9,6 +9,37 @@ This repository hosts Debian packages for various Variscite System on Modules (S
 | `var-ti`         | Debian packages common to all Variscite TI-based SoMs |
 | `am62x-var-som`  | Debian packages specific to Variscite VAR-SOM-AM62    |
 
+## How to Add New Packages to the PPA
+
+To add new Debian packages to the PPA, follow these steps:
+
+1. Place the `.deb` files in the `pool` or `pool/<release>` directory of the PPA.
+
+    ```bash
+    cp /path/to/package.deb /path/to/ppa/pool/
+    ```
+
+    or
+
+    ```bash
+    cp /path/to/package.deb /path/to/ppa/pool/<release>/
+    ```
+
+    For example, add a package to var-ti bookworm release:
+    ```bash
+    cp /path/to/package.deb var-ti/pool/bookworm/
+    ```
+
+2. Run the provided update script to organize the `.deb` files and update the PPA files:
+
+    ```bash
+    ./update-ppa.sh
+    ```
+
+3. The script will organize the packages into the appropriate subdirectories, generate the `Packages` and `Packages.gz` files, and create the `Release` file for the PPA.
+
+4. After the update, the new packages will be available in the PPA for installation.
+
 ## How to Add PPAs to Your System
 
 To use the packages hosted in these PPAs, follow the steps below to add the appropriate repositories to your system's `/etc/apt/sources.list.d/` directory.

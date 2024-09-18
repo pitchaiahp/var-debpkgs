@@ -48,7 +48,7 @@ To use the packages hosted in these PPAs, follow the steps below to add the appr
 Add the `var-ti` and `am62x-var-som` PPA for Bookworm:
 
 ```bash
-echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/var-ti/dists/bookworm main" | sudo tee /etc/apt/sources.list.d/var-ti.list
-echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/am62x-var-som/dists/bookworm main" | sudo tee /etc/apt/sources.list.d/am62x-var-som.list
+echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/var-ti bookworm main" | sudo tee /etc/apt/sources.list.d/var-ti.list
+echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/am62x-var-som bookworm main" | sudo tee /etc/apt/sources.list.d/am62x-var-som.list
 sudo apt update
 ```

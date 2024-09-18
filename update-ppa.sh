@@ -58,7 +58,7 @@ for PPA in "${PPAS[@]}"; do
         POOL_RELEASE_DIR="$PPA_DIR/pool/$RELEASE"
 
         # Create directories for each release in dists and pool
-        mkdir -p "$DIST_DIR/main/binary-amd64"
+        mkdir -p "$DIST_DIR/main/binary-arm64"
         mkdir -p "$POOL_DIR"
 
         # Organize deb files directly in the PPA directory into pool for all releases
@@ -75,8 +75,8 @@ for PPA in "${PPAS[@]}"; do
 
         # Generate Packages and Packages.gz files
         echo "Generating Packages and Packages.gz for $RELEASE in $POOL_RELEASE_DIR..."
-        dpkg-scanpackages --multiversion . > "$DIST_DIR/main/binary-amd64/Packages"
-        gzip -k -f "$DIST_DIR/main/binary-amd64/Packages"
+        dpkg-scanpackages --multiversion . > "$DIST_DIR/main/binary-arm64/Packages"
+        gzip -k -f "$DIST_DIR/main/binary-arm64/Packages"
 
         # Generate Release file
         echo "Generating Release file for $RELEASE in $DIST_DIR..."

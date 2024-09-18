@@ -9,7 +9,33 @@ if ! command -v dpkg-scanpackages &> /dev/null || ! command -v apt-ftparchive &>
 fi
 
 # Array of PPAs to update
-PPAS=("ti/bookworm")
+PPAS=("var-ti" "var-nxp" "am62x-var-som")
+
+# Array of releases
+RELEASES=("bookworm")
+
+# Function to organize deb files into pool by first letter
+organize_debs_into_pool() {
+    local SOURCE_DIR="$1"
+    local POOL_DIR="$2"
+
+    # Copy deb files to pool directory organized by first letter of package name
+    for DEB_FILE in "$SOURCE_DIR"/*.deb; do
+        if [ -f "$DEB_FILE" ]; then
+            PACKAGE_NAME=$(dpkg-deb --field "$DEB_FILE" Package)
+            FIRST_LETTER="${PACKAGE_NAME:0:1}"
+            POOL_SUBDIR="$POOL_DIR/$FIRST_LETTER/$PACKAGE_NAME"
+            mkdir -p "$POOL_SUBDIR"
+            cp "$DEB_FILE" "$POOL_SUBDIR/"
+        fi
+    done
+}
+
+# Function to clean up deb files after organizing
+cleanup_debs() {
+    local SOURCE_DIR="$1"
+    rm -f "$SOURCE_DIR"/*.deb
+}
 
 # Loop through each PPA in the array
 for PPA in "${PPAS[@]}"; do
@@ -21,17 +47,42 @@ for PPA in "${PPAS[@]}"; do
         continue
     fi
 
-    # Change to PPA_DIR so paths in Packages file are relative
-    cd "$PPA_DIR" || exit 1
+    # Create dists and pool directories if they don't exist
+    mkdir -p "$PPA_DIR/dists"
+    mkdir -p "$PPA_DIR/pool"
 
-    # Generate Packages and Packages.gz files
-    echo "Generating Packages and Packages.gz in $PPA_DIR..."
-    dpkg-scanpackages --multiversion . > Packages
-    gzip -k -f Packages
+    # Loop through each release
+    for RELEASE in "${RELEASES[@]}"; do
+        DIST_DIR="$PPA_DIR/dists/$RELEASE"
+        POOL_DIR="$PPA_DIR/pool/"
+        POOL_RELEASE_DIR="$PPA_DIR/pool/$RELEASE"
 
-    # Generate Release file
-    echo "Generating Release file in $PPA_DIR..."
-    apt-ftparchive release . > Release
+        # Create directories for each release in dists and pool
+        mkdir -p "$DIST_DIR/main/binary-amd64"
+        mkdir -p "$POOL_DIR"
 
-    echo "PPA files updated successfully in $PPA_DIR."
+        # Organize deb files directly in the PPA directory into pool for all releases
+
+        organize_debs_into_pool "$POOL_DIR" "$POOL_RELEASE_DIR"
+        cleanup_debs $POOL_DIR
+
+        # Organize deb files in the specific release directory into pool
+        organize_debs_into_pool "$POOL_RELEASE_DIR" "$POOL_RELEASE_DIR"
+        cleanup_debs $POOL_RELEASE_DIR
+
+        # Change to the appropriate pool directory for dpkg-scanpackages
+        cd "$POOL_RELEASE_DIR" || exit 1
+
+        # Generate Packages and Packages.gz files
+        echo "Generating Packages and Packages.gz for $RELEASE in $POOL_RELEASE_DIR..."
+        dpkg-scanpackages --multiversion . > "$DIST_DIR/main/binary-amd64/Packages"
+        gzip -k -f "$DIST_DIR/main/binary-amd64/Packages"
+
+        # Generate Release file
+        echo "Generating Release file for $RELEASE in $DIST_DIR..."
+        apt-ftparchive release "$DIST_DIR" > "$DIST_DIR/Release"
+
+        echo "PPA files updated successfully for $RELEASE in $PPA_DIR."
+        cd -
+    done
 done

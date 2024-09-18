@@ -3,7 +3,7 @@ Version: 3154fcb-r1.0.2
 Architecture: arm64
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: base-files, gpiod, i2c-tools, libgpiod2, util-linux, var-gpio-utils, var-wireless-utils
-Filename: ./b/bcm43xx-utils/bcm43xx-utils_3154fcb-r1.0.2_arm64.deb
+Filename: ./pool/bookworm/b/bcm43xx-utils/bcm43xx-utils_3154fcb-r1.0.2_arm64.deb
 Size: 2800
 MD5sum: 59616206b4b6f9751ac1d477358ddf4b
 SHA1: 898255b7bad45269c8e1843e8acec8beefe68002

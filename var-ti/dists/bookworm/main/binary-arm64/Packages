@@ -3,7 +3,7 @@ Version: 1:20230804-r0.arago1.0
 Architecture: all
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: linux-firmware-broadcom-license
-Filename: ./l/linux-firmware-bcm4339/linux-firmware-bcm4339_20230804-r0.arago1.0_all.deb
+Filename: ./pool/bookworm/l/linux-firmware-bcm4339/linux-firmware-bcm4339_20230804-r0.arago1.0_all.deb
 Size: 382392
 MD5sum: 88e85ad26490613d4aaef54a8166c3e3
 SHA1: e11704234c1b755673c58fdd4c92fa5fd1127b58
@@ -24,7 +24,7 @@ Version: 1:20230804-r0.arago1.0
 Architecture: all
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: linux-firmware-cypress-license
-Filename: ./l/linux-firmware-bcm43430/linux-firmware-bcm43430_20230804-r0.arago1.0_all.deb
+Filename: ./pool/bookworm/l/linux-firmware-bcm43430/linux-firmware-bcm43430_20230804-r0.arago1.0_all.deb
 Size: 312352
 MD5sum: 23fe98917d9b8936f7278d4236112c38
 SHA1: d807fcbdde2569359752255ef3438a81f75c39e9
@@ -44,7 +44,7 @@ Package: linux-firmware-broadcom-license
 Version: 1:20230804-r0.arago1.0
 Architecture: all
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Filename: ./l/linux-firmware-broadcom-license/linux-firmware-broadcom-license_20230804-r0.arago1.0_all.deb
+Filename: ./pool/bookworm/l/linux-firmware-broadcom-license/linux-firmware-broadcom-license_20230804-r0.arago1.0_all.deb
 Size: 2928
 MD5sum: adaed724831ccc931f20e40a26afa84b
 SHA1: c3f71d76ba88b2a4228a0a8ea42ceff34485fe68
@@ -64,7 +64,7 @@ Package: linux-firmware-cypress-license
 Version: 1:20230804-r0.arago1.0
 Architecture: all
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
-Filename: ./l/linux-firmware-cypress-license/linux-firmware-cypress-license_20230804-r0.arago1.0_all.deb
+Filename: ./pool/bookworm/l/linux-firmware-cypress-license/linux-firmware-cypress-license_20230804-r0.arago1.0_all.deb
 Size: 4556
 MD5sum: 1e7a5ff36e8dcf8188d2f3d49a03c49d
 SHA1: 5ec083fd7abdeb279931e098fc6c084ece9aca51
@@ -86,7 +86,7 @@ Version: 6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1
 Architecture: arm64
 Maintainer: Andrew Davis <afd@ti.com>
 Installed-Size: 49832
-Filename: ./l/linux-headers-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0/linux-headers-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
+Filename: ./pool/bookworm/l/linux-headers-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0/linux-headers-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
 Size: 8191636
 MD5sum: 4fffdf968f52f4d0d27915b5aff16ea3
 SHA1: 31c09688287ea88931a60a4af9f00effe349219f
@@ -105,7 +105,7 @@ Version: 6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1
 Architecture: arm64
 Maintainer: Andrew Davis <afd@ti.com>
 Installed-Size: 46502
-Filename: ./l/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
+Filename: ./pool/bookworm/l/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
 Size: 16131956
 MD5sum: 1d7e4a34fafaf40e308584adc84da2df
 SHA1: f10cf6a81947913f09f3365ac5176de0d2761524
@@ -123,7 +123,7 @@ Version: 6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1
 Architecture: arm64
 Maintainer: Andrew Davis <afd@ti.com>
 Installed-Size: 222759
-Filename: ./l/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-dbg/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-dbg_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
+Filename: ./pool/bookworm/l/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-dbg/linux-image-6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-dbg_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
 Size: 51127168
 MD5sum: 49b9d9251b055b415bdf96a4818c4dd5
 SHA1: a20c08ce33d8dcf7263dc194a0ea167e0912ed15
@@ -142,7 +142,7 @@ Architecture: arm64
 Maintainer: Andrew Davis <afd@ti.com>
 Installed-Size: 6498
 Provides: linux-kernel-headers
-Filename: ./l/linux-libc-dev/linux-libc-dev_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
+Filename: ./pool/bookworm/l/linux-libc-dev/linux-libc-dev_6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f870f0-1_arm64.deb
 Size: 1251724
 MD5sum: 3b978bf0de77c8b26f8cac3ca9516d48
 SHA1: b2352129600f20e0d0a17deb43b5a0220bc76d85
@@ -160,7 +160,7 @@ Version: 3154fcb-r1.0.2
 Architecture: arm64
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: gpiod, libgpiod2
-Filename: ./v/var-gpio-utils/var-gpio-utils_3154fcb-r1.0.2_arm64.deb
+Filename: ./pool/bookworm/v/var-gpio-utils/var-gpio-utils_3154fcb-r1.0.2_arm64.deb
 Size: 1196
 MD5sum: 3749e14bc4cb841701e00404bd78422c
 SHA1: b715492f1354858baf5e19e56fa5222731a61944
@@ -177,7 +177,7 @@ Version: 3154fcb-r1.0.0
 Architecture: arm64
 Maintainer: OE-Core Developers <openembedded-core@lists.openembedded.org>
 Depends: base-files
-Filename: ./v/var-wireless-utils/var-wireless-utils_3154fcb-r1.0.0_arm64.deb
+Filename: ./pool/bookworm/v/var-wireless-utils/var-wireless-utils_3154fcb-r1.0.0_arm64.deb
 Size: 3800
 MD5sum: 8985e8fa27579f6d36a66c10a918a333
 SHA1: 7228ea9bf5f9b69303a0535393153c36c88f64f8

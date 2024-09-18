@@ -69,8 +69,8 @@ for PPA in "${PPAS[@]}"; do
         organize_debs_into_pool "$POOL_RELEASE_DIR" "$POOL_RELEASE_DIR"
         cleanup_debs "$POOL_RELEASE_DIR"
 
-        # Change to the appropriate pool directory for dpkg-scanpackages
-        cd "$POOL_RELEASE_DIR" || exit 1
+        # Change to the ppa directory for dpkg-scanpackages
+        cd "$PPA_DIR" || exit 1
 
         # Generate Packages and Packages.gz files
         echo "Generating Packages and Packages.gz for $RELEASE in $POOL_RELEASE_DIR..."

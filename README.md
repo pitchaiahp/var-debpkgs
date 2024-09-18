@@ -6,6 +6,7 @@ This repository hosts Debian packages for various Variscite System on Modules (S
 
 | PPA Name         | Description                                           |
 | ---------------- | ----------------------------------------------------- |
+| `var`            | Debian packages common to all Variscite SoMs          |
 | `var-ti`         | Debian packages common to all Variscite TI-based SoMs |
 | `am62x-var-som`  | Debian packages specific to Variscite VAR-SOM-AM62    |
 
@@ -76,9 +77,10 @@ To use the packages hosted in these PPAs, follow the steps below to add the appr
 
 ### Example for VAR-SOM-AM62 Bookworm:
 
-Add the `var-ti` and `am62x-var-som` PPA for Bookworm:
+Add the `var`, `var-ti`, and `am62x-var-som` PPAs for Bookworm:
 
 ```bash
+echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/var bookworm main" | sudo tee /etc/apt/sources.list.d/var.list
 echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/var-ti bookworm main" | sudo tee /etc/apt/sources.list.d/var-ti.list
 echo "deb [trusted=yes] https://nsdrude-varigit.github.io/var-debpkgs/am62x-var-som bookworm main" | sudo tee /etc/apt/sources.list.d/am62x-var-som.list
 sudo apt update

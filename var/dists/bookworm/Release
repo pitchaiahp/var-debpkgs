@@ -1,0 +1,24 @@
+Architectures: arm64
+Codename: bookworm
+Components: main
+Date: Wed, 18 Sep 2024 21:10:43 +0000
+Description: Variscite var packages for bookworm
+Label: Variscite
+Origin: Variscite
+Suite: bookworm
+MD5Sum:
+ 43d76dfed5f24d648a579fdd70cecde8              195 Release
+ 7cf7425e8433aec71a6a5dcb25c673ab              655 main/binary-arm64/Packages
+ c05e15e41bee75c6a470feee60a12084              463 main/binary-arm64/Packages.gz
+SHA1:
+ ff87b13f65201a1ccda16c7c0707122b3c987fc4              195 Release
+ 7572bb07f3edbd54535404c98578a2cb2546674a              655 main/binary-arm64/Packages
+ 75c5bf4768f99a83946daf3f4f7a78ef5162568b              463 main/binary-arm64/Packages.gz
+SHA256:
+ 3a9f40764c1447737240905d876a1071a224a2dd39b5fd822ceeb64715fa9946              195 Release
+ 513c8dc6feb0b5588ce2ed0682953b1b6933b61783fc0581325e6415ce48a3e7              655 main/binary-arm64/Packages
+ e4786fb5249f689d64535660af060df65ba30beeb0b081e72948d5522b6f715b              463 main/binary-arm64/Packages.gz
+SHA512:
+ 78a3374df3697739366d31595bf7be028e56fc19ea04c21451c2843b12e5736121606312ae09b08e1a209b77c1ecdd5f7e81e4d3f33741e12332dacf9e7ca31a              195 Release
+ 57c495a5d7a60f3560f79ee5869e44b8547e2a748dfdeade12b3548d93859c0a09d25386b3c23b93a19ff2d8243868a7a308620745773d526155d915dd51efb9              655 main/binary-arm64/Packages
+ bd586f3247b53cf042db3344e01acacdceeabca134e3192e7b9d1afefdb98dc1a0704ab4d5b104f912d5380f86e837bcdca7d9c41434936a50c212e34037783c              463 main/binary-arm64/Packages.gz

@@ -1,3 +1,20 @@
+Package: brcm-patchram-plus
+Version: 1858a94
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 76
+Depends: libc6 (>= 2.34)
+Filename: ./pool/bookworm/b/brcm-patchram-plus/brcm-patchram-plus_1858a94_arm64.deb
+Size: 7784
+MD5sum: 130436d83c2a876808330f7a05c50d5b
+SHA1: ff1eb5ce2e6adc8d10f7c81f2149ae6b5db8b1ba
+SHA256: 17f6effd31f4cf2b992a5414b5f5ee205b79b104d31b078b55b477c8bc5e0256
+Section: misc
+Priority: optional
+Homepage: https://github.com/varigit/brcm-patchram-plus
+Description: BRCM Patchram Plus tool for ARM64
+ A tool to load firmware patches on Broadcom devices.
+
 Package: var-mii
 Version: 1.0+18ba44d59193215e71ea30a9445067985f5c09e3-1
 Architecture: arm64

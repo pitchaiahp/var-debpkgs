@@ -15,3 +15,23 @@ Description: bcm43xx-utils version 3154fcb-r1.0
 Oe: bcm43xx-utils
 Packagearch: am62x-var-som
 
+Package: firmware-ti-ipc-am62-var-som
+Source: ti-linux-firmware-variscite
+Version: 09.01.00.08-01+81dce77663841e1aea3228ee237ed4f1d6148afc-1
+Architecture: all
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 66
+Conflicts: firmware-ti-ipc
+Replaces: firmware-ti-ipc
+Provides: firmware-ti-ipc
+Filename: ./pool/bookworm/f/firmware-ti-ipc-am62-var-som/firmware-ti-ipc-am62-var-som_09.01.00.08-01+81dce77663841e1aea3228ee237ed4f1d6148afc-1_all.deb
+Size: 28684
+MD5sum: 3cbc0db7145ea8c58fa9565df14cba2c
+SHA1: d22450d528454ddff21596ee0075d6b9dc09c937
+SHA256: e9320c46b50df24817244a82ec46dcaa4180c1b6cebfcb412cd6dda3cb65db2e
+Section: kernel
+Priority: optional
+Homepage: https://github.com/varigit/meta-variscite-bsp-ti/tree/kirkstone-var01/recipes-ti/ti-rtos-bin
+Description: TI IPC firmware for AM62
+ This package provides TI IPC firmwares for remoteprocs on VAR-SOM-AM62
+

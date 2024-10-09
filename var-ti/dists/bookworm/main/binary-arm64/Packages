@@ -118,6 +118,42 @@ Description: Linux kernel headers for 6.1.46+ff7deb28804cb5feeef0e5e51fd8acae58f
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 49668
+Filename: ./pool/bookworm/l/linux-headers-6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1_6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1_arm64.deb
+Size: 8228780
+MD5sum: 98bf5bfbaadbf4145d4e9fd1c4d083a9
+SHA1: dd1fa1067154c9b60efcf249d658b427701b156d
+SHA256: 231645da8e4b30f75a3adf28495ee8c39d12618822ba2601d4bd3c556ada0f03
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1 on arm64
+ This package provides kernel header files for 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1 on arm64.
+ This is useful for people who need to build external modules.
+
+Package: linux-headers-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 49947
+Filename: ./pool/bookworm/l/linux-headers-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1_6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1_arm64.deb
+Size: 8242572
+MD5sum: d2bdb50a5f8c0a2bb52ce35565bc35bd
+SHA1: ec8df61fe6e32f80832a5b1c3f5c9f8ebb38fbac
+SHA256: 93b3265a15129459a221e62aeef7ba115bc171c140d55b66ed8a377cfc5910bb
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1 on arm64
+ This package provides kernel header files for 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1 on arm64.
+ This is useful for people who need to build external modules.
+
 Package: linux-image-6.1.46+940fab2b81d2867133444eed01ba1b20c294965d
 Source: ti-linux-kernel
 Version: 6.1.46+940fab2b81d2867133444eed01ba1b20c294965d-2
@@ -190,6 +226,79 @@ Description: Linux kernel debugging symbols for 6.1.46+ff7deb28804cb5feeef0e5e51
  This package will come in handy if you need to debug the kernel. It provides
  all the necessary debug symbols for the kernel and its modules.
 
+Package: linux-image-6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 42618
+Filename: ./pool/bookworm/l/linux-image-6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1_6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1_arm64.deb
+Size: 14840908
+MD5sum: 2d326be073009470d80342c2d61fb2bd
+SHA1: ab292a6e6cad214de37ad3b2aa22c33f778b6a40
+SHA256: aa8088273d10c10686326114705d3fe7eea4a31251c464a8ecf35e097957f82f
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+ This package contains the Linux kernel, modules, and corresponding other
+ files, version: 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1.
+
+Package: linux-image-6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1-dbg
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 200331
+Filename: ./pool/bookworm/l/linux-image-6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1-dbg_6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1_arm64.deb
+Size: 46641172
+MD5sum: ef288ca5c88dc8903320f56e55d86313
+SHA1: aaed87a378e9c4404cc76d1d31da91753a83383c
+SHA256: 770312e2ab04e600d513edb9800fbf93905c15f5ffec1eb273f7ca47f1dcfdf8
+Section: debug
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel debugging symbols for 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+ This package will come in handy if you need to debug the kernel. It provides
+ all the necessary debug symbols for the kernel and its modules.
+
+Package: linux-image-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 42921
+Depends: linux-headers-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Filename: ./pool/bookworm/l/linux-image-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1_6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1_arm64.deb
+Size: 15033896
+MD5sum: 505297d8d78440adbd93b3484e00cac5
+SHA1: a78355901e34cd146e46164884221537eb82f724
+SHA256: e50287a50349452110cd63b6b098d5bc80b3e799fd00914e57da150fe63fb844
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+ This package contains the Linux kernel, modules, and corresponding other
+ files, version: 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1.
+
+Package: linux-image-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1-dbg
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 202489
+Filename: ./pool/bookworm/l/linux-image-6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1-dbg_6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1_arm64.deb
+Size: 47231804
+MD5sum: 120dfba8ea798264841cb031cdc623ad
+SHA1: 2473ea1b1b4eb2cd4353989cff31310011eceebd
+SHA256: 18d2c6e7ccfdb4b5b7c982d0c8f80eb9f8c2fd6ded7790d29f1d95d6915d9d77
+Section: debug
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel debugging symbols for 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+ This package will come in handy if you need to debug the kernel. It provides
+ all the necessary debug symbols for the kernel and its modules.
+
 Package: linux-libc-dev
 Source: ti-linux-kernel
 Version: 6.1.46+940fab2b81d2867133444eed01ba1b20c294965d-2
@@ -222,6 +331,46 @@ Size: 1251724
 MD5sum: 3b978bf0de77c8b26f8cac3ca9516d48
 SHA1: b2352129600f20e0d0a17deb43b5a0220bc76d85
 SHA256: 80bf17763d363b391cfc505a9ffa1054d9f76d5bc5cd10b1c40c6967e5dba77f
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 6503
+Provides: linux-kernel-headers
+Filename: ./pool/bookworm/l/linux-libc-dev_6.1.83-k3-var1+ca705eb7c9d102423b529319e8192634cc7bfbbd-1_arm64.deb
+Size: 1252652
+MD5sum: d5541b4d6fd4beedd1237c4b5575cfc7
+SHA1: 6119aeedaba708c2ac8af054e6654b8803059a04
+SHA256: 7f84b9352440a9ee191ecb27e4d6c42dc3ab375bd04f19d05adbb2e929a3cb66
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
+Package: linux-libc-dev
+Source: ti-linux-kernel
+Version: 6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1
+Architecture: arm64
+Maintainer: Nate Drude <nate.d@variscite.com>
+Installed-Size: 6503
+Provides: linux-kernel-headers
+Filename: ./pool/bookworm/l/linux-libc-dev_6.1.83-k3-var2+62548c6d33d9a14a1960a856bab0ac58218c43a9-1_arm64.deb
+Size: 1252960
+MD5sum: 47764b7b4e8c895c1a3fbfcf229585a9
+SHA1: d8187f06f5c287361c59db528339d5e365f31c49
+SHA256: 497ac34919c7bd89db86235927c66838379679993cd6cd7ac589fbc3628b39bf
 Section: devel
 Priority: optional
 Multi-Arch: same

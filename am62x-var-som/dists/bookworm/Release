@@ -1,24 +1,24 @@
 Architectures: arm64
 Codename: bookworm
 Components: main
-Date: Wed, 09 Oct 2024 21:35:14 +0000
+Date: Thu, 07 Nov 2024 11:13:36 +0000
 Description: Variscite am62x-var-som packages for bookworm
 Label: Variscite
 Origin: Variscite
 Suite: bookworm
 MD5Sum:
- e90f3879040f90d0b7875d819d89574e              205 Release
+ 76b237ed6457f75769622d30584baf6b              205 Release
  962dc47d5c644e55aa93f2913a97e2dd             1561 main/binary-arm64/Packages
- 88dd05202b3eaf9991b75055979083de              849 main/binary-arm64/Packages.gz
+ 0f7c35f9d5bde36b43d5c3fba4ae4204              849 main/binary-arm64/Packages.gz
 SHA1:
- 6e3fc0994f4f14a30cf07286f124e3750f6b6894              205 Release
+ a2fc3e2d10ae33edc48484040011c26a71acfb80              205 Release
  036a2a9225be897921957b16533278b9f27d09f5             1561 main/binary-arm64/Packages
- fd2561e63edb3c9b1839018676e4e26151cd8b5f              849 main/binary-arm64/Packages.gz
+ 5598eaecb579bd78205ef91a8c3bedae478f5080              849 main/binary-arm64/Packages.gz
 SHA256:
- 16ebf26ec6c76e21d31c594214e00522aa1cf68e061db9d2cf1fdc934fec8333              205 Release
+ 2f3c22309a0fc928c57d0460cd8eec0b83750adc5478ca0579bd5215a496a316              205 Release
  eee410c3c6e9cd719f6b91a47ebd087cf34f9f3b75f7908ded490ebeeef52932             1561 main/binary-arm64/Packages
- 2e25b42eb2e1dc73d28a6058fd33d3a96b4b0b3c85b5898313a58018f7f8bbed              849 main/binary-arm64/Packages.gz
+ 7e0500d481d5f4831f143a3f3bab035cb65b1b46bc5cb8cb398875a550d9c4e6              849 main/binary-arm64/Packages.gz
 SHA512:
- 9d9af30ea68e95c25ffcc926d75803e96a682c14adad7760825df0c89383fa8a97c9ca9cd99b8feaf6241e4a33ec90aae61c4c1ed4371b782b33a0cbea3e8d43              205 Release
+ 5acb199f9889a8c0cc8739edd991e00b13cc921e8e25e119ee51f06fc2c2b0f56c9559a225464ffaf53aa7066b181d8833f106e19f4f646b3962d0e48ec2f41c              205 Release
  3cc943fddd0d0bd794497a36f0722067a23bf563aefe3ef29ae564756f090ea2e79d822a90960044b5703184b6b47c7d9a7b675f555f1808d686c3e292c471b3             1561 main/binary-arm64/Packages
- 3656f71f48158165e01672bdb7aca6d86ee032eb65aff5fffed12ae6f2c5e254aa54aca626ce1143377bc51b9c3805e051a83a8bc584ec241d69f02133ae9e54              849 main/binary-arm64/Packages.gz
+ 00926fdfd1d3f10357c36f7b6f47b3fca0728a53c8da38009708cd0bc5ea5e64b96ef84202f5c29f923a16a22d0b7ef416d5f9010ff5135bf79d623a3c54a843              849 main/binary-arm64/Packages.gz

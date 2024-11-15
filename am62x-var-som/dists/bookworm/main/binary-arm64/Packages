@@ -26,9 +26,9 @@ Replaces: firmware-ti-ipc
 Provides: firmware-ti-ipc
 Filename: ./pool/bookworm/f/firmware-ti-ipc-am62-var-som/firmware-ti-ipc-am62-var-som_09.01.00.08-01+81dce77663841e1aea3228ee237ed4f1d6148afc-1_all.deb
 Size: 28684
-MD5sum: 3cbc0db7145ea8c58fa9565df14cba2c
-SHA1: d22450d528454ddff21596ee0075d6b9dc09c937
-SHA256: e9320c46b50df24817244a82ec46dcaa4180c1b6cebfcb412cd6dda3cb65db2e
+MD5sum: a758c479611cfa251d8a870abb3801de
+SHA1: bbd797e094768ef3f07701ed3f1ef6298e6dbd50
+SHA256: 63623b7f5ae5f5fccc2340ca2abc3d4de9adb950b1eba83a070ae178165dc899
 Section: kernel
 Priority: optional
 Homepage: https://github.com/varigit/meta-variscite-bsp-ti/tree/kirkstone-var01/recipes-ti/ti-rtos-bin
